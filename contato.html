@@ -73,12 +73,21 @@
         .navigation a:hover {
             text-decoration: underline;
         }
+
+        .show-password {
+            display: flex;
+            align-items: center;
+        }
+
+        .show-password input[type="checkbox"] {
+            margin-right: 10px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Formulário de Contato</h1>
+        <h1>Formulário de Login</h1>
         <form action="#" method="post">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
@@ -86,15 +95,15 @@
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
             <button type="submit">Enviar</button>
         </form>
         <div class="navigation">
             <a href="index.html">Página Principal</a>
         </div>
     </div>
+
 </body>
 
 </html>
